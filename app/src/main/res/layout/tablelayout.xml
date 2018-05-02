@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    tools:layout_editor_absoluteY="73dp">
+
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="136dp">
+
+        <Button
+            android:id="@+id/t4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="t4" />
+
+        <Button
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="t3" />
+
+        <Button
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="t2" />
+
+        <Button
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="129dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Menu" />
+
+        <Button
+            android:id="@+id/TablesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Tables" />
+
+        <Button
+            android:id="@+id/InvoiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Invoices" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Log Out" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="792dp"
+        android:layout_height="93dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <Button
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="93dp"
+            android:layout_weight="1"
+            android:text="t5" />
+
+        <Button
+            android:id="@+id/t6"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:text="t6" />
+
+        <Button
+            android:id="@+id/t7"
+            android:layout_width="wrap_content"
+            android:layout_height="103dp"
+            android:layout_weight="1"
+            android:text="t7" />
+
+        <Button
+            android:id="@+id/t8"
+            android:layout_width="wrap_content"
+            android:layout_height="103dp"
+            android:layout_weight="1"
+            android:text="t8" />
+
+        <Button
+            android:id="@+id/t9"
+            android:layout_width="wrap_content"
+            android:layout_height="104dp"
+            android:layout_weight="1"
+            android:text="t9" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

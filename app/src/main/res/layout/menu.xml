@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    tools:layout_editor_absoluteY="89dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SelectTableSpinner"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/MenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Menu" />
+
+        <Button
+            android:id="@+id/TablesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Tables" />
+
+        <Button
+            android:id="@+id/InvoiceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Invoices" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Log Out" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/SelectTableSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/TrollyLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/MenuButton1-1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="EampleMenu" />
+
+            <Button
+                android:id="@+id/MenuButton1-2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EampleMenu" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/MenuButton2-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EampleMenu" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/MenuButton3-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EampleMenu" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/MenuButton4-1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EampleMenu" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TrollyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Order Cart"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/trollyList"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/menuLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menuLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginRight="312dp"
+        android:layout_marginStart="216dp"
+        android:text="Menu"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toStartOf="@+id/TrollyLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trollyList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginStart="9dp"
+        android:text="TO DO: PRINTS CONTENTS OF TROLLY HERE"
+        app:layout_constraintBottom_toTopOf="@+id/PayNowButton"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/TrollyLabel"
+        app:layout_constraintTop_toBottomOf="@+id/TrollyLabel" />
+
+    <Button
+        android:id="@+id/PayNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="PAY NOW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/OrderToTableButton"
+        app:layout_constraintTop_toBottomOf="@+id/trollyList" />
+
+    <Button
+        android:id="@+id/OrderToTableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="599dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="599dp"
+        android:text="Send to Table"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PayNowButton"
+        app:layout_constraintEnd_toStartOf="@+id/PayNowButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/SelectTableSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginLeft="394dp"
+        android:layout_marginRight="243dp"
+        android:layout_marginStart="394dp"
+        android:entries="Table 1, "
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</android.support.constraint.ConstraintLayout>
